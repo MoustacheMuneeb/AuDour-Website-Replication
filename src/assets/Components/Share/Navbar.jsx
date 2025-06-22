@@ -17,9 +17,10 @@ const Navbar = () => {
         <section>
             <Offerbar />
             <div
-                className="w-100% h-[547.49px] bg-contain bg-no-repeat cursor-pointer bg-[url('Main_Banner.webp')]"
+                className="w-100% h-[547.49px] bg-contain bg-no-repeat cursor-pointer "
                 style={{ position: 'relative', zIndex: 1 }}>
-                <div className={`ps-12 pe-12 pt-5 pb-5 flex justify-between items-center flex-wrap z-50 fixed container transition duration-500 ${isScrolled ? 'bg-white opacity-90': 'bg-transparent'} `}>
+                    <img src="Main_Banner.webp" className='absolute' alt="" />
+                <div className={`mt-[44px] ps-12 pe-12 pt-5 pb-5 flex justify-between items-center flex-wrap z-50 fixed container transition duration-500 ${isScrolled ? 'bg-white opacity-90': 'bg-transparent'} `}>
                     <div className='w-[120px] h-[38.5px]'>
                         <img src="Aodour-Logo-New-Final-01.avif" alt="logo" />
                     </div>
